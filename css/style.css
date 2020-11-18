@@ -1,1 +1,55 @@
 /* Denna fil skall innehålla din CSS kod */
+.gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 150vh;
+    
+    grid-template-areas: 
+        "he he he he d1 d2"
+        "se se se se se se"
+        "se se se se se se"
+        "a1 a1 a1 a1 a1 a1"
+        "a2 a2 a3 a3 a4 a4"
+        "a2 a2 a3 a3 a4 a4"
+        "ft ft ft ft ft ft"
+        ;
+    grid-template-columns: repeat(6*1fr);
+    grid-template-rows: repeat(7*1fr);
+}
+
+.header {
+    grid-area: he;
+    background-color: blue;
+}
+
+#div1 {
+    grid-area: d1;
+}
+
+#div2 {
+    grid-area: d2;
+}
+
+.bild {
+    grid-area: se;
+}
+
+.article1 {
+    grid-area: a1;
+}
+
+.article2 {
+    grid-area: a2;
+}
+
+.article3 {
+    grid-area: a3;
+}
+
+.article4 {
+    grid-area: a4;
+}
+
+.footer {
+    grid-area: ft;
+}
