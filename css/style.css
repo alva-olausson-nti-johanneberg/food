@@ -1,4 +1,8 @@
 /* Denna fil skall innehålla din CSS kod */
+body {
+    margin: 0;
+    background-color: rgba(226, 175, 98, 0.39);
+}
 .gridwrapper {
     display: grid;
     width: 100vw;
@@ -18,20 +22,31 @@
 }
 
 .header {
+    font-family: 'League Script', cursive;
+    font-style: italic;
     grid-area: he;
-    background-color: blue;
+    padding: 30px;
 }
 
 #div1 {
     grid-area: d1;
+    padding: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'League Script', cursive;
+    text-align: center;
 }
 
 #div2 {
     grid-area: d2;
+    padding: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'League Script', cursive;
+    text-align: center;
 }
 
 .bild {
     grid-area: se;
+    max-width: 100px;
 }
 
 .article1 {
