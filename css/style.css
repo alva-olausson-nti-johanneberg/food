@@ -1,7 +1,9 @@
 /* Denna fil skall innehålla din CSS kod */
 body {
     margin: 0;
-    background-color: rgba(226, 175, 98, 0.39);
+    background-color: rgba(150, 116, 65, 0.39);
+    
+
 }
 .gridwrapper {
     display: grid;
@@ -9,39 +11,55 @@ body {
     height: 150vh;
     
     grid-template-areas: 
-        "he he he he d1 d2"
-        "se se se se se se"
-        "se se se se se se"
-        "a1 a1 a1 a1 a1 a1"
-        "a2 a2 a3 a3 a4 a4"
-        "a2 a2 a3 a3 a4 a4"
-        "ft ft ft ft ft ft"
+        "he he he he d1 d2 d3"
+        "se se se se se se se"
+        "se se se se se se se"
+        "a1 a1 a1 a1 a1 a1 sd"
+        "a2 a2 a3 a3 a4 a4 sd"
+        "a2 a2 a3 a3 a4 a4 sd"
+        "a2 a2 a3 a3 a4 a4 sd"
+        "ft ft ft ft ft ft ft"
         ;
-    grid-template-columns: repeat(6*1fr);
-    grid-template-rows: repeat(7*1fr);
+    grid-template-columns: repeat(7*1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .header {
-    font-family: 'League Script', cursive;
-    font-style: italic;
     grid-area: he;
     padding: 30px;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;
+    padding-left: 50px;
 }
 
 #div1 {
     grid-area: d1;
-    padding: 30px;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'League Script', cursive;
-    text-align: center;
+    padding-left: 70px;
+    padding-top: 30px;
+    text-align: right;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;
 }
 
 #div2 {
     grid-area: d2;
-    padding: 30px;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'League Script', cursive;
+   padding-top: 30px;
     text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;
+}
+
+#div3 {
+    grid-area: d3;
+   padding-top: 30px;
+   padding-right: 70px;
+    text-align: right;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;
 }
 
 .bild {
@@ -51,20 +69,97 @@ body {
 
 .article1 {
     grid-area: a1;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    font-size: 110%;
 }
 
 .article2 {
     grid-area: a2;
+    text-align: center;    
 }
 
 .article3 {
     grid-area: a3;
+    text-align: center;   
 }
 
 .article4 {
     grid-area: a4;
+    text-align: center;
 }
 
 .footer {
     grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(6* 1fr);
+    grid-template-rows: 1fr;
+    background-color: rgba(145, 110, 51, 0.507);
+
+    grid-template-areas: 
+    "dv1 dv2 dv3 dv4 dv5";
 }
+
+.sidodel {
+    grid-area: sd;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-top: 47px;
+}
+
+.info {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poiret One', cursive;
+    font-size: 115%;
+}
+
+.ur {
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;   
+}
+
+.infor {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: 'Poiret One', cursive;
+    font-size: 19px;
+}
+.allinfo {
+    font-family: 'Poiret One', cursive;
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.karta {
+    display: block;
+   width: 200%vw;
+   height: 400px;
+   
+    
+}
+
+#meny {
+    width: 1100px;
+    height: auto;
+    padding-top: 350px;
+}
+
+.sidepart {
+    grid-area: sd;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-top: 324px;
+}
+/*background-color: rgba(150, 116, 65, 0.39);
