@@ -11,13 +11,13 @@ body {
     height: 150vh;
     
     grid-template-areas: 
-        "he he he he d1 d2 d3"
+        "he he he he he he he"
         "se se se se se se se"
         "se se se se se se se"
-        "a1 a1 a1 a1 a1 a1 sd"
-        "a2 a2 a3 a3 a4 a4 sd"
-        "a2 a2 a3 a3 a4 a4 sd"
-        "a2 a2 a3 a3 a4 a4 sd"
+        "sg sg sg sg sg sg sd"
+        "sg sg sg sg sg sg sd"
+        "sg sg sg sg sg sg sd"
+        "sg sg sg sg sg sg sd"
         "ft ft ft ft ft ft ft"
         ;
     grid-template-columns: repeat(7*1fr);
@@ -26,26 +26,36 @@ body {
 
 .header {
     grid-area: he;
-    padding: 30px;
     font-family: 'Orbitron', sans-serif;
+    
+    display: grid;
+    grid-template-areas:
+    "ha ha ha d1 d2 d3";
+    grid-template-columns: repeat(6*1fr);
+    grid-template-rows: 1fr;
+}
+
+.rubrik {
+    grid-area: ha;
     background-color:rgba(150, 116, 65, 0.39);
     margin-bottom: 30px;
-    padding-left: 50px;
+    padding: 30px;
 }
 
 #div1 {
     grid-area: d1;
     padding-left: 70px;
-    padding-top: 30px;
-    text-align: right;
+    padding-top: 40px;
+    text-align: center;
     font-family: 'Orbitron', sans-serif;
     background-color:rgba(150, 116, 65, 0.39);
     margin-bottom: 30px;
+    
 }
 
 #div2 {
     grid-area: d2;
-   padding-top: 30px;
+   padding-top: 40px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     background-color:rgba(150, 116, 65, 0.39);
@@ -54,9 +64,9 @@ body {
 
 #div3 {
     grid-area: d3;
-   padding-top: 30px;
+   padding-top: 40px;
    padding-right: 70px;
-    text-align: right;
+    text-align: center;
     font-family: 'Orbitron', sans-serif;
     background-color:rgba(150, 116, 65, 0.39);
     margin-bottom: 30px;
@@ -64,7 +74,17 @@ body {
 
 .bild {
     grid-area: se;
-    max-width: 100px;
+    max-width: 100%;
+}
+
+.storGridWrapper {
+    grid-area: sg;
+    display: grid;
+    grid-template-areas: 
+    "a1 a1 a1 a1 a1 a1"
+    "a2 a2 a3 a3 a4 a4"
+    "a2 a2 a3 a3 a4 a4"
+    "a2 a2 a3 a3 a4 a4";
 }
 
 .article1 {
@@ -91,22 +111,8 @@ body {
     text-align: center;
 }
 
-.footer {
-    grid-area: ft;
-    display: grid;
-    grid-template-columns: repeat(6* 1fr);
-    grid-template-rows: 1fr;
-    background-color: rgba(145, 110, 51, 0.507);
 
-    grid-template-areas: 
-    "dv1 dv2 dv3 dv4 dv5";
-}
 
-.sidodel {
-    grid-area: sd;
-    background-color:rgba(150, 116, 65, 0.39);
-    margin-top: 47px;
-}
 
 .info {
     padding-left: 20px;
@@ -152,14 +158,31 @@ body {
 }
 
 #meny {
-    width: 1100px;
+    width: 1000px;
     height: auto;
-    padding-top: 350px;
+    padding: 50px;
+    align-items: center;
 }
+
+.footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(6* 1fr);
+    grid-template-rows: 1fr;
+    background-color: rgba(145, 110, 51, 0.507);
+
+    grid-template-areas: 
+    "dv1 dv2 dv3 dv4 dv5";
+}
+
 
 .sidepart {
     grid-area: sd;
     background-color:rgba(150, 116, 65, 0.39);
-    margin-top: 324px;
+    width: 120px;
+    margin-top: 47px;
 }
+
+
+
 /*background-color: rgba(150, 116, 65, 0.39);
