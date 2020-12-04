@@ -7,30 +7,30 @@ body {
 }
 .gridwrapper {
     display: grid;
-    width: 100vw;
-    height: 150vh;
+    max-width: 100vw;
+    min-height: 150vh;
     
     grid-template-areas: 
         "he he he he he he he"
         "se se se se se se se"
         "se se se se se se se"
-        "sg sg sg sg sg sg sd"
-        "sg sg sg sg sg sg sd"
-        "sg sg sg sg sg sg sd"
-        "sg sg sg sg sg sg sd"
+        "sg sg sg sg sg sg sg"
+        "sg sg sg sg sg sg sg"
+        "sg sg sg sg sg sg sg"
+        "sg sg sg sg sg sg sg"
         "ft ft ft ft ft ft ft"
         ;
     grid-template-columns: repeat(7*1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
 }
 
 .header {
     grid-area: he;
     font-family: 'Orbitron', sans-serif;
-    
+    height: 200px;
     display: grid;
     grid-template-areas:
-    "ha ha ha d1 d2 d3";
+    "lg ha mp d1 d2 d3";
     grid-template-columns: repeat(6*1fr);
     grid-template-rows: 1fr;
 }
@@ -38,14 +38,41 @@ body {
 .rubrik {
     grid-area: ha;
     background-color:rgba(150, 116, 65, 0.39);
+    font-size: 25px;
     margin-bottom: 30px;
-    padding: 30px;
+    padding-top: 20px;
+    padding-right: 50px;
 }
 
+#logo {
+    grid-area: lg;
+    padding-left: 70px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;       
+    }
+
+#logotyp {
+    height: 120px;
+    width: auto;
+   margin-right: 40px;
+}
+
+#midlepart {
+    grid-area: mp;
+    padding-left: 70px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color:rgba(150, 116, 65, 0.39);
+    margin-bottom: 30px;
+}
 #div1 {
     grid-area: d1;
     padding-left: 70px;
-    padding-top: 40px;
+    padding-top: 50px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     background-color:rgba(150, 116, 65, 0.39);
@@ -55,7 +82,7 @@ body {
 
 #div2 {
     grid-area: d2;
-   padding-top: 40px;
+   padding-top: 50px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     background-color:rgba(150, 116, 65, 0.39);
@@ -64,7 +91,7 @@ body {
 
 #div3 {
     grid-area: d3;
-   padding-top: 40px;
+   padding-top: 50px;
    padding-right: 70px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
@@ -98,17 +125,20 @@ body {
 
 .article2 {
     grid-area: a2;
-    text-align: center;    
+    text-align: center; 
+    padding: 40px;   
 }
 
 .article3 {
     grid-area: a3;
-    text-align: center;   
+    text-align: center; 
+    padding: 40px;     
 }
 
 .article4 {
     grid-area: a4;
     text-align: center;
+    padding: 40px;   
 }
 
 
@@ -160,7 +190,7 @@ body {
 #meny {
     width: 1000px;
     height: auto;
-    padding: 50px;
+  padding-bottom: 10px;
     align-items: center;
 }
 
@@ -179,10 +209,16 @@ body {
 .sidepart {
     grid-area: sd;
     background-color:rgba(150, 116, 65, 0.39);
-    width: 120px;
-    margin-top: 47px;
+ 
+    margin: 0;
+    
+   
 }
 
+.knapp {
+    height: 50px;
+    width: auto;
+}
 
 
 /*background-color: rgba(150, 116, 65, 0.39);
