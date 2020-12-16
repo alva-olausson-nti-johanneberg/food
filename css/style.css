@@ -202,23 +202,29 @@ body {
     background-color: rgba(145, 110, 51, 0.507);
 
     grid-template-areas: 
-    "dv1 dv2 dv3 dv4 dv5";
+    "dv1 dv2 dv3 dv4";
 }
 
-
-.sidepart {
-    grid-area: sd;
-    background-color:rgba(150, 116, 65, 0.39);
- 
-    margin: 0;
-    
-   
-}
 
 .knapp {
     height: 50px;
     width: auto;
+    background-color: rgba(145, 110, 51, 0.507);
+    margin-bottom: 300px;
 }
 
 
+.textmeny {
+    color: black;
+    text-decoration: none; 
+}
+
+.textmeny:hover {
+    text-decoration: underline;
+}
+
+
+#bokabord {
+    margin-bottom: 290px;
+}
 /*background-color: rgba(150, 116, 65, 0.39);
